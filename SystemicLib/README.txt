@@ -34,6 +34,14 @@ Initial submission of library to Github.
 A pre-built version of the library with the name systemic-framework-20140410.jar can be found in the
  directory build/dist.
 
+=======================
+Version from 02/07/2015
+=======================
+Added GZIPUtil and related test class to library.
+
+A pre-built version of the library with the name systemic-framework-20150618.jar can be found in the
+directory build/dist.
+
 #########################################################################################################
 # Download Instructions
 #########################################################################################################
