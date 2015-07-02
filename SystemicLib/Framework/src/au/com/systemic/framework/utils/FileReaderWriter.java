@@ -27,7 +27,7 @@ public class FileReaderWriter
 {
   /**
    * This method opens the file given by its name and full path (ie: C:/temp/testFile.xml), reads its
-   * content, closes the file again and returns the content as String. It is therfore assumed that the
+   * content, closes the file again and returns the content as String. It is therefore assumed that the
    * file content is ASCII text otherwise the behaviour of this method is not defined. If the file 
    * doesn't exist (ie. file name wrong or path not there) then null is returned.
    * 
@@ -56,7 +56,7 @@ public class FileReaderWriter
    *  
    * @param content Content to write into the file.
    * @param fileNameInclFullPath Fully qualified path of the file to write to. If file doesn't exist it
-   *                             is created, oterwise it is overwritten.
+   *                             is created, otherwise it is overwritten.
    *                             
    * @return TRUE : All succeeded.
    *         FALSE: Something failed.
