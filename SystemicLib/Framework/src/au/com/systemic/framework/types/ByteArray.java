@@ -36,10 +36,15 @@ public class ByteArray
 	 * Initialises the byte array based on the given string.
 	 * 
 	 * @param value String to convert to byte array.
-  */
+	 */
 	public ByteArray(String value)
 	{
 		getfromString(value);
+	}
+	
+	public ByteArray(byte[] bytes)
+	{
+		this.bytes = bytes;
 	}
 
 	
