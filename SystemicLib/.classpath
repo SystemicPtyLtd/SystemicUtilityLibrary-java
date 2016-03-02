@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="Framework/src"/>
 	<classpathentry kind="src" path="test/src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="src" path="config"/>
 	<classpathentry kind="lib" path="lib/commons/commons-discovery-0.2.jar"/>
 	<classpathentry kind="lib" path="lib/commons/commons-jxpath.jar"/>
 	<classpathentry kind="lib" path="lib/commons/commons-logging.jar"/>
@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="lib/jdom.jar"/>
 	<classpathentry kind="lib" path="lib/log4j.jar"/>
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
