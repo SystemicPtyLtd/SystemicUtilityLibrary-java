@@ -49,6 +49,40 @@ public class FileReaderWriter
   }
   
   /**
+   * This method opens the file given by its name and full path (ie: C:/temp/testFile.xml), reads its
+   * content using the encoding given by the charsetName (i.e. UTF-8), closes the file again and returns 
+   * the content as String. It is therefore assumed that the file content is ASCII text otherwise the behaviour 
+   * of this method is not defined. If the file doesn't exist (ie. file name wrong or path not there) then null 
+   * is returned. 
+   * 
+   * @param fileNameInclFullPath File name with fully qualified path.
+   * @param charsetName The name of a supported charset. The behaviour of this method is unspecified when the given
+   *                    file contains bytes that are not valid in the given charset. If this parameter is null then no
+   *                    encoding is applied.
+   *                    
+   * @return See description.
+   */
+  public static String getFileContent(String fileNameInclFullPath, String charsetName)
+  {
+    try
+    {
+        if (StringUtils.isEmpty(charsetName))
+        {
+            return new String(getFileBytes(new File(fileNameInclFullPath)));
+        }
+        else
+        {
+            return new String(getFileBytes(new File(fileNameInclFullPath)), charsetName);
+        }
+    }
+    catch (Exception ex)
+    {
+      ex.printStackTrace();
+      return null;
+    }
+  }
+  
+  /**
    * This method writes the content to the file given by its name and fully qualified path 
    * (ie. C:/temp/testFile.xml). It is assumed that the path exists and that the file if it exists
    *  is closed otherwise false is returned. If the file doesn't exist then it will be created otherwise
